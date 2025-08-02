@@ -1,0 +1,21 @@
+---
+const bookImg = '/assets/71j++JQUiZL._SL1500_.jpg';
+---
+<section class="book-feature">
+  <img src={bookImg} alt="Zukunft im Widerspruch Buchcover" width="250" />
+  <div>
+    <h3>Spiegel-Bestseller: Mein neues Buch "Zukunft im Widerspruch"</h3>
+    <p>
+      Zusammen mit mehr als 40 Expert*innen und Vordenker*innen werden aktuelle gesellschaftliche, politische und wirtschaftliche Herausforderungen beleuchtet und Wege aufgezeigt, wie vermeintliche Gegensätze durch innovative Perspektiven in Einklang gebracht werden können – von Bildung über KI bis zur Arbeitswelt. Es geht nicht nur darum, Probleme zu analysieren, sondern konkrete Lösungen zu entwickeln, die Wandel und Resilienz fördern.
+    </p>
+    <a href="/angebot" class="cta">Mehr Details zum Buch</a>
+  </div>
+</section>
+<style>
+.book-feature { display: flex; gap: 2rem; align-items: center; margin: 2rem 0; }
+.book-feature img { border-radius: 8px; box-shadow: 0 2px 12px #aaa; }
+.book-feature .cta { display: inline-block; margin-top: 1rem; background: #45639e; color: #fff; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
+@media (max-width: 600px) {
+  .book-feature { flex-direction: column; text-align: center; }
+}
+</style>
