@@ -1,0 +1,22 @@
+---
+const navLinks = [
+  { name: "Start", href: "/" },
+  { name: "Angebot", href: "/angebot" },
+  { name: "Über mich", href: "/ueber-mich" },
+  { name: "Kontakt", href: "/kontakt" },
+];
+---
+<nav aria-label="Main navigation">
+  <a href="#maincontent" class="skip-link">Skip to Main Content</a>
+  <ul>
+    {navLinks.map(link => (
+      <li><a href={link.href}>{link.name}</a></li>
+    ))}
+  </ul>
+</nav>
+<style>
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 0; top: 0; background: #fff; z-index: 1000; }
+nav ul { display: flex; gap: 2rem; }
+nav a { text-decoration: none; color: #222; font-weight: bold; }
+</style>
